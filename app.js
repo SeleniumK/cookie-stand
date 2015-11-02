@@ -22,7 +22,10 @@ var pikePlace = {
     document.body.appendChild(location);
 
     for(var i = 0; i < this.dailyHr.length; i++) {
-      var numCookie = document.createElement('p');
+      var list = document.createElement('ol');
+      document.body.appendChild(list);
+
+      var numCookie = document.createElement('li');
       numCookie.innerHTML = this.dailyHr[i] + ": " + this.cookiesPerHr[i];
       document.body.appendChild(numCookie);
     }
@@ -55,7 +58,10 @@ var seaTac = {
     document.body.appendChild(location);
 
     for(var i = 0; i < this.dailyHr.length; i++) {
-      var numCookie = document.createElement('p');
+      var list = document.createElement('ol');
+      document.body.appendChild(list);
+
+      var numCookie = document.createElement('li');
       numCookie.innerHTML = this.dailyHr[i] + ": " + this.cookiesPerHr[i];
       document.body.appendChild(numCookie);
     }
@@ -88,7 +94,10 @@ var southCenter = {
     document.body.appendChild(location);
 
     for(var i = 0; i < this.dailyHr.length; i++) {
-      var numCookie = document.createElement('p');
+      var list = document.createElement('ol');
+      document.body.appendChild(list);
+
+      var numCookie = document.createElement('li');
       numCookie.innerHTML = this.dailyHr[i] + ": " + this.cookiesPerHr[i];
       document.body.appendChild(numCookie);
     }
@@ -121,7 +130,10 @@ var bellevueSquare = {
     document.body.appendChild(location);
 
     for(var i = 0; i < this.dailyHr.length; i++) {
-      var numCookie = document.createElement('p');
+      var list = document.createElement('ol');
+      document.body.appendChild(list);
+
+      var numCookie = document.createElement('li');
       numCookie.innerHTML = this.dailyHr[i] + ": " + this.cookiesPerHr[i];
       document.body.appendChild(numCookie);
     }
@@ -154,7 +166,10 @@ var alki = {
     document.body.appendChild(location);
 
     for(var i = 0; i < this.dailyHr.length; i++) {
-      var numCookie = document.createElement('p');
+      var list = document.createElement('ol');
+      document.body.appendChild(list);
+
+      var numCookie = document.createElement('li');
       numCookie.innerHTML = this.dailyHr[i] + ": " + this.cookiesPerHr[i];
       document.body.appendChild(numCookie);
     }
@@ -177,7 +192,7 @@ bellevueSquare.ranCookCalc();
 bellevueSquare.displayCookiesPerHr();
 
 alki.ranCookCalc();
-Alki.displayCookiesPerHr();
+alki.displayCookiesPerHr();
 
 
 
