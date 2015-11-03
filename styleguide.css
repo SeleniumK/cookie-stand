@@ -1,0 +1,68 @@
+
+
+* {
+  background-color: #F7F7F7 ;
+}
+
+#heading{
+  margin-left: 0;
+  font-size: 30px;
+  font-weight: black;
+}
+
+
+h1, h2, h3, h4 {
+  font-family: 'Droid Serif', serif;
+  color: #30323D;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+
+p {
+  font-family: Georgia, Times, serif;
+  color: #4D5061;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+
+table {
+  color: #F7F7F7;
+  font-size: 30px;
+  text-align: center;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.colors{
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  height: 150px;
+  width: 150px;
+}
+
+#orange{
+  background-color: #C27146;
+}
+
+#blue{
+  background-color: #30323D;
+
+}
+
+#grey{
+  background-color: #4D5061;
+}
+
+#ltBlue{
+  background-color: #5C80BC;
+}
+
+#dBrown{
+  background-color: #362A21;
+}
+

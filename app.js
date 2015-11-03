@@ -5,6 +5,7 @@ var pikePlace = {
   avCookie: 5.2,
   dailyHr: ["10am", "11am", "12pm", "1pm", "2pm", "3pm", "4pm", "5pm"],
   cookiesPerHr: [],
+  dailyCookies: 0,
   ranCustCalc: function() {
     return Math.floor(Math.random() * (this.maxCust - this.minCust + 1)) + this.minCust;
   },
@@ -24,10 +25,15 @@ var pikePlace = {
     var list = document.createElement('ul');
 
     for(var i = 0; i < this.dailyHr.length; i++) {
+      this.dailyCookies += this.cookiesPerHr[i];
       var numCookie = document.createElement('li');
       numCookie.innerHTML = this.dailyHr[i] + ": " + this.cookiesPerHr[i];
       list.appendChild(numCookie);
     }
+
+    var displayTotal = document.createElement('li');
+    displayTotal.innerHTML = "Daily Cookies: " +this.dailyCookies;
+    list.appendChild(displayTotal);
 
     document.body.appendChild(list);
   }
@@ -41,9 +47,11 @@ var seaTac = {
   avCookie: 1.2,
   dailyHr: ["10am", "11am", "12pm", "1pm", "2pm", "3pm", "4pm", "5pm"],
   cookiesPerHr: [],
+  dailyCookies: 0,
   ranCustCalc: function() {
     return Math.floor(Math.random() * (this.maxCust - this.minCust + 1)) + this.minCust;
   },
+
   ranCookCalc: function() {
     for (var i = 0; i < this.dailyHr.length; i++){
       console.log(Math.floor(this.avCookie * this.ranCustCalc() ));
@@ -60,14 +68,18 @@ var seaTac = {
     var list = document.createElement('ul');
 
     for(var i = 0; i < this.dailyHr.length; i++) {
+      this.dailyCookies += this.cookiesPerHr[i];
       var numCookie = document.createElement('li');
       numCookie.innerHTML = this.dailyHr[i] + ": " + this.cookiesPerHr[i];
       list.appendChild(numCookie);
     }
 
+    var displayTotal = document.createElement('li');
+    displayTotal.innerHTML = "Daily Cookies: " +this.dailyCookies;
+    list.appendChild(displayTotal);
+
     document.body.appendChild(list);
   }
-
 };
 
 var southCenter = {
@@ -77,6 +89,7 @@ var southCenter = {
   avCookie: 1.9,
   dailyHr: ["10am", "11am", "12pm", "1pm", "2pm", "3pm", "4pm", "5pm"],
   cookiesPerHr: [],
+  dailyCookies: 0,
   ranCustCalc: function() {
     return Math.floor(Math.random() * (this.maxCust - this.minCust + 1)) + this.minCust;
   },
@@ -96,10 +109,15 @@ var southCenter = {
     var list = document.createElement('ul');
 
     for(var i = 0; i < this.dailyHr.length; i++) {
+      this.dailyCookies += this.cookiesPerHr[i];
       var numCookie = document.createElement('li');
       numCookie.innerHTML = this.dailyHr[i] + ": " + this.cookiesPerHr[i];
       list.appendChild(numCookie);
     }
+
+    var displayTotal = document.createElement('li');
+    displayTotal.innerHTML = "Daily Cookies: " +this.dailyCookies;
+    list.appendChild(displayTotal);
 
     document.body.appendChild(list);
   }
@@ -113,6 +131,7 @@ var bellevueSquare = {
   avCookie: 3.3,
   dailyHr: ["10am", "11am", "12pm", "1pm", "2pm", "3pm", "4pm", "5pm"],
   cookiesPerHr: [],
+  dailyCookies: 0,
   ranCustCalc: function() {
     return Math.floor(Math.random() * (this.maxCust - this.minCust + 1)) + this.minCust;
   },
@@ -132,10 +151,15 @@ var bellevueSquare = {
     var list = document.createElement('ul');
 
     for(var i = 0; i < this.dailyHr.length; i++) {
+      this.dailyCookies += this.cookiesPerHr[i];
       var numCookie = document.createElement('li');
       numCookie.innerHTML = this.dailyHr[i] + ": " + this.cookiesPerHr[i];
       list.appendChild(numCookie);
     }
+
+    var displayTotal = document.createElement('li');
+    displayTotal.innerHTML = "Daily Cookies: " +this.dailyCookies;
+    list.appendChild(displayTotal);
 
     document.body.appendChild(list);
   }
@@ -149,6 +173,7 @@ var alki = {
   avCookie: 2.6,
   dailyHr: ["10am", "11am", "12pm", "1pm", "2pm", "3pm", "4pm", "5pm"],
   cookiesPerHr: [],
+  dailyCookies: 0,
   ranCustCalc: function() {
     return Math.floor(Math.random() * (this.maxCust - this.minCust + 1)) + this.minCust;
   },
@@ -168,10 +193,15 @@ var alki = {
     var list = document.createElement('ul');
 
     for(var i = 0; i < this.dailyHr.length; i++) {
+      this.dailyCookies += this.cookiesPerHr[i];
       var numCookie = document.createElement('li');
       numCookie.innerHTML = this.dailyHr[i] + ": " + this.cookiesPerHr[i];
       list.appendChild(numCookie);
     }
+
+    var displayTotal = document.createElement('li');
+    displayTotal.innerHTML = "Daily Cookies: " +this.dailyCookies;
+    list.appendChild(displayTotal);
 
     document.body.appendChild(list);
   }
