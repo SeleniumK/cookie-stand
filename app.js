@@ -1,19 +1,20 @@
 var pikePlace = {
-  nameOfStore: "Pike Place",
+  nameOfStore: "Pike Place Market",
   minCust: 17,
   maxCust: 88,
   avCookie: 5.2,
   dailyHr: ["10am", "11am", "12pm", "1pm", "2pm", "3pm", "4pm", "5pm"],
   cookiesPerHr: [],
   dailyCookies: 0,
+
   ranCustCalc: function() {
     return Math.floor(Math.random() * (this.maxCust - this.minCust + 1)) + this.minCust;
   },
+
   ranCookCalc: function() {
     for (var i = 0; i < this.dailyHr.length; i++){
-      console.log(Math.floor(this.avCookie * this.ranCustCalc() ));
-      console.log("let's try this");
       this.cookiesPerHr.push(Math.floor(this.avCookie * this.ranCustCalc() ));
+      this.dailyCookies += this.cookiesPerHr[i];
     }
   },
 
@@ -25,7 +26,6 @@ var pikePlace = {
     var list = document.createElement('ul');
 
     for(var i = 0; i < this.dailyHr.length; i++) {
-      this.dailyCookies += this.cookiesPerHr[i];
       var numCookie = document.createElement('li');
       numCookie.innerHTML = this.dailyHr[i] + ": " + this.cookiesPerHr[i];
       list.appendChild(numCookie);
@@ -48,15 +48,15 @@ var seaTac = {
   dailyHr: ["10am", "11am", "12pm", "1pm", "2pm", "3pm", "4pm", "5pm"],
   cookiesPerHr: [],
   dailyCookies: 0,
+
   ranCustCalc: function() {
     return Math.floor(Math.random() * (this.maxCust - this.minCust + 1)) + this.minCust;
   },
 
   ranCookCalc: function() {
     for (var i = 0; i < this.dailyHr.length; i++){
-      console.log(Math.floor(this.avCookie * this.ranCustCalc() ));
-      console.log("let's try this");
       this.cookiesPerHr.push(Math.floor(this.avCookie * this.ranCustCalc() ));
+      this.dailyCookies += this.cookiesPerHr[i];
     }
   },
 
@@ -68,7 +68,6 @@ var seaTac = {
     var list = document.createElement('ul');
 
     for(var i = 0; i < this.dailyHr.length; i++) {
-      this.dailyCookies += this.cookiesPerHr[i];
       var numCookie = document.createElement('li');
       numCookie.innerHTML = this.dailyHr[i] + ": " + this.cookiesPerHr[i];
       list.appendChild(numCookie);
@@ -90,14 +89,15 @@ var southCenter = {
   dailyHr: ["10am", "11am", "12pm", "1pm", "2pm", "3pm", "4pm", "5pm"],
   cookiesPerHr: [],
   dailyCookies: 0,
+
   ranCustCalc: function() {
     return Math.floor(Math.random() * (this.maxCust - this.minCust + 1)) + this.minCust;
   },
+
   ranCookCalc: function() {
     for (var i = 0; i < this.dailyHr.length; i++){
-      console.log(Math.floor(this.avCookie * this.ranCustCalc() ));
-      console.log("let's try this");
       this.cookiesPerHr.push(Math.floor(this.avCookie * this.ranCustCalc() ));
+      this.dailyCookies += this.cookiesPerHr[i];
     }
   },
 
@@ -109,7 +109,6 @@ var southCenter = {
     var list = document.createElement('ul');
 
     for(var i = 0; i < this.dailyHr.length; i++) {
-      this.dailyCookies += this.cookiesPerHr[i];
       var numCookie = document.createElement('li');
       numCookie.innerHTML = this.dailyHr[i] + ": " + this.cookiesPerHr[i];
       list.appendChild(numCookie);
@@ -132,14 +131,15 @@ var bellevueSquare = {
   dailyHr: ["10am", "11am", "12pm", "1pm", "2pm", "3pm", "4pm", "5pm"],
   cookiesPerHr: [],
   dailyCookies: 0,
+
   ranCustCalc: function() {
     return Math.floor(Math.random() * (this.maxCust - this.minCust + 1)) + this.minCust;
   },
+
   ranCookCalc: function() {
     for (var i = 0; i < this.dailyHr.length; i++){
-      console.log(Math.floor(this.avCookie * this.ranCustCalc() ));
-      console.log("let's try this");
       this.cookiesPerHr.push(Math.floor(this.avCookie * this.ranCustCalc() ));
+      this.dailyCookies += this.cookiesPerHr[i];
     }
   },
 
@@ -151,14 +151,13 @@ var bellevueSquare = {
     var list = document.createElement('ul');
 
     for(var i = 0; i < this.dailyHr.length; i++) {
-      this.dailyCookies += this.cookiesPerHr[i];
       var numCookie = document.createElement('li');
       numCookie.innerHTML = this.dailyHr[i] + ": " + this.cookiesPerHr[i];
       list.appendChild(numCookie);
     }
 
     var displayTotal = document.createElement('li');
-    displayTotal.innerHTML = "Daily Cookies: " +this.dailyCookies;
+    displayTotal.innerHTML = "Daily Cookies: " + this.dailyCookies;
     list.appendChild(displayTotal);
 
     document.body.appendChild(list);
@@ -174,14 +173,15 @@ var alki = {
   dailyHr: ["10am", "11am", "12pm", "1pm", "2pm", "3pm", "4pm", "5pm"],
   cookiesPerHr: [],
   dailyCookies: 0,
+
   ranCustCalc: function() {
     return Math.floor(Math.random() * (this.maxCust - this.minCust + 1)) + this.minCust;
   },
+
   ranCookCalc: function() {
     for (var i = 0; i < this.dailyHr.length; i++){
-      console.log(Math.floor(this.avCookie * this.ranCustCalc() ));
-      console.log("let's try this");
       this.cookiesPerHr.push(Math.floor(this.avCookie * this.ranCustCalc() ));
+      this.dailyCookies += this.cookiesPerHr[i];
     }
   },
 
@@ -193,7 +193,6 @@ var alki = {
     var list = document.createElement('ul');
 
     for(var i = 0; i < this.dailyHr.length; i++) {
-      this.dailyCookies += this.cookiesPerHr[i];
       var numCookie = document.createElement('li');
       numCookie.innerHTML = this.dailyHr[i] + ": " + this.cookiesPerHr[i];
       list.appendChild(numCookie);
