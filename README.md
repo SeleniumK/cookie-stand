@@ -1,1 +1,1 @@
-#Cookie Stand for week two
+#Cookie Stand Project for Week Two
