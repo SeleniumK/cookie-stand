@@ -21,15 +21,15 @@ var pikePlace = {
     location.innerHTML = this.nameOfStore;
     document.body.appendChild(location);
 
-    for(var i = 0; i < this.dailyHr.length; i++) {
-      var list = document.createElement('ol');
-      document.body.appendChild(list);
+    var list = document.createElement('ul');
 
+    for(var i = 0; i < this.dailyHr.length; i++) {
       var numCookie = document.createElement('li');
       numCookie.innerHTML = this.dailyHr[i] + ": " + this.cookiesPerHr[i];
-      document.body.appendChild(numCookie);
+      list.appendChild(numCookie);
     }
 
+    document.body.appendChild(list);
   }
 
 };
@@ -57,15 +57,15 @@ var seaTac = {
     location.innerHTML = this.nameOfStore;
     document.body.appendChild(location);
 
-    for(var i = 0; i < this.dailyHr.length; i++) {
-      var list = document.createElement('ol');
-      document.body.appendChild(list);
+    var list = document.createElement('ul');
 
+    for(var i = 0; i < this.dailyHr.length; i++) {
       var numCookie = document.createElement('li');
       numCookie.innerHTML = this.dailyHr[i] + ": " + this.cookiesPerHr[i];
-      document.body.appendChild(numCookie);
+      list.appendChild(numCookie);
     }
 
+    document.body.appendChild(list);
   }
 
 };
@@ -93,15 +93,15 @@ var southCenter = {
     location.innerHTML = this.nameOfStore;
     document.body.appendChild(location);
 
-    for(var i = 0; i < this.dailyHr.length; i++) {
-      var list = document.createElement('ol');
-      document.body.appendChild(list);
+    var list = document.createElement('ul');
 
+    for(var i = 0; i < this.dailyHr.length; i++) {
       var numCookie = document.createElement('li');
       numCookie.innerHTML = this.dailyHr[i] + ": " + this.cookiesPerHr[i];
-      document.body.appendChild(numCookie);
+      list.appendChild(numCookie);
     }
 
+    document.body.appendChild(list);
   }
 
 };
@@ -129,15 +129,15 @@ var bellevueSquare = {
     location.innerHTML = this.nameOfStore;
     document.body.appendChild(location);
 
-    for(var i = 0; i < this.dailyHr.length; i++) {
-      var list = document.createElement('ol');
-      document.body.appendChild(list);
+    var list = document.createElement('ul');
 
+    for(var i = 0; i < this.dailyHr.length; i++) {
       var numCookie = document.createElement('li');
       numCookie.innerHTML = this.dailyHr[i] + ": " + this.cookiesPerHr[i];
-      document.body.appendChild(numCookie);
+      list.appendChild(numCookie);
     }
 
+    document.body.appendChild(list);
   }
 
 };
@@ -165,15 +165,15 @@ var alki = {
     location.innerHTML = this.nameOfStore;
     document.body.appendChild(location);
 
-    for(var i = 0; i < this.dailyHr.length; i++) {
-      var list = document.createElement('ol');
-      document.body.appendChild(list);
+    var list = document.createElement('ul');
 
+    for(var i = 0; i < this.dailyHr.length; i++) {
       var numCookie = document.createElement('li');
       numCookie.innerHTML = this.dailyHr[i] + ": " + this.cookiesPerHr[i];
-      document.body.appendChild(numCookie);
+      list.appendChild(numCookie);
     }
 
+    document.body.appendChild(list);
   }
 
 };
