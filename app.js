@@ -17,7 +17,7 @@ var pikePlace = {
     }
   },
 
-  displayCookiesPerHr: function () {
+  displayData: function () {
     var location = document.createElement('h3');
     location.innerHTML = this.nameOfStore;
     document.body.appendChild(location);
@@ -60,7 +60,7 @@ var seaTac = {
     }
   },
 
-  displayCookiesPerHr: function () {
+  displayData: function () {
     var location = document.createElement('h3');
     location.innerHTML = this.nameOfStore;
     document.body.appendChild(location);
@@ -101,7 +101,7 @@ var southCenter = {
     }
   },
 
-  displayCookiesPerHr: function () {
+  displayData: function () {
     var location = document.createElement('h3');
     location.innerHTML = this.nameOfStore;
     document.body.appendChild(location);
@@ -143,7 +143,7 @@ var bellevueSquare = {
     }
   },
 
-  displayCookiesPerHr: function () {
+  displayData: function () {
     var location = document.createElement('h3');
     location.innerHTML = this.nameOfStore;
     document.body.appendChild(location);
@@ -185,7 +185,7 @@ var alki = {
     }
   },
 
-  displayCookiesPerHr: function () {
+  displayData: function () {
     var location = document.createElement('h3');
     location.innerHTML = this.nameOfStore;
     document.body.appendChild(location);
@@ -210,19 +210,19 @@ var alki = {
 
 
 pikePlace.ranCookCalc();
-pikePlace.displayCookiesPerHr();
+pikePlace.displayData();
 
 seaTac.ranCookCalc();
-seaTac.displayCookiesPerHr();
+seaTac.displayData();
 
 southCenter.ranCookCalc();
-southCenter.displayCookiesPerHr();
+southCenter.displayData();
 
 bellevueSquare.ranCookCalc();
-bellevueSquare.displayCookiesPerHr();
+bellevueSquare.displayData();
 
 alki.ranCookCalc();
-alki.displayCookiesPerHr();
+alki.displayData();
 
 
 
