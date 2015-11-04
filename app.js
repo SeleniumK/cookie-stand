@@ -1,5 +1,6 @@
 var tableHasHeading = false;
 var storeList = [];
+var update = document.getElementById("update");
 
 function Store(nameOfStore, minCust, maxCust, avCookie) {
   this.nameOfStore = nameOfStore;
@@ -86,5 +87,35 @@ function displayAllStores() {
   }
 }
 
+var updateStoreList = function(event) {
+  event.preventDefault();
+
+  if (!event.target.nameOfStore.value || !event.target.minCust.value || !event.target.maxCust.value || !event.target.avCookie.value) {
+    return alert("fields cannot be empty");
+  }
+  
+  var nameOfStore = event.target.nameOfStore.value;
+  var minCust = event.target.minCust.value;
+  minCust = parseInt(minCust);
+  var maxCust = event.target.maxCust.value;
+  maxCust = parseInt(maxCust);
+  var avCookie = event.target.avCookie.value;
+  avCookie = parseInt(avCookie);
+
+  var newStore = new Store(nameOfStore, minCust, maxCust, avCookie);
+  newStore.calcAndDisplay();
+
+  event.target.nameOfStore.value = null;
+  event.target.minCust.value = null;
+  event.target.maxCust.value = null;
+  event.target.avCookie.value = null;
+
+  storeList.push(newStore);
+}
+
 displayAllStores();
+
+update.addEventListener("submit", updateStoreList);
+
+
 
