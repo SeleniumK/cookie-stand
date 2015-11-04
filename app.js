@@ -1,15 +1,15 @@
-
 var tableHasHeading = false;
-
+var storeList = [];
 
 function Store(nameOfStore, minCust, maxCust, avCookie) {
   this.nameOfStore = nameOfStore;
   this.minCust = minCust;
   this.maxCust = maxCust;
   this.avCookie = avCookie;
-  this.dailyHr = ["10am", "11am", "12pm", "1pm", "2pm", "3pm", "4pm", "5pm", "6pm"];
+  this.dailyHr = ["10am", "11am", "12pm", "1pm", "2pm", "3pm", "4pm", "5pm"];
   this.cookiesPerHr = [];
   this.dailyCookies = 0;
+  storeList.push(this);
 
   this.custCalc = function() {
     return Math.floor(Math.random() * (this.maxCust - this.minCust + 1)) + this.minCust;
@@ -24,7 +24,7 @@ function Store(nameOfStore, minCust, maxCust, avCookie) {
 
   this.initializeTable = function() {
     var table = document.createElement('table');
-    document.body.appendChild(table);
+    document.getElementById('storeData').appendChild(table);
     table.setAttribute('id', 'cookieTable');
 
     var heading = document.createElement('tr');
@@ -34,14 +34,13 @@ function Store(nameOfStore, minCust, maxCust, avCookie) {
       var hours = document.createElement('th');
       hours.textContent = this.dailyHr[i];
       heading.appendChild(hours);
-    };
+    }
 
     var dailyTotal = document.createElement('th');
     dailyTotal.textContent = "Total Cookies: ";
     heading.appendChild(dailyTotal);
     table.appendChild(heading);
   };
-
 
   this.displayData = function () {
     var row = document.createElement('tr');
@@ -80,11 +79,12 @@ var southCenter = new Store("South Center Mall", 11, 38, 1.9);
 var bellevueSquare = new Store("Bellevue Square Mall", 20, 48, 3.3);
 var alki = new Store("Alki Beach", 3, 24, 2.6);
 
-pikePlace.calcAndDisplay();
-seaTac.calcAndDisplay();
-southCenter.calcAndDisplay();
-bellevueSquare.calcAndDisplay();
-alki.calcAndDisplay();
 
+function displayAllStores() {
+  for(var i = 0; i < storeList.length; i++) {
+    storeList[i].calcAndDisplay();
+  }
+}
 
+displayAllStores();
 

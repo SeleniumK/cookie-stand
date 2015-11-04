@@ -2,10 +2,8 @@
   background-color: #F7F7F7;
 }
 
-
 #cookieTable{
-  background-color: #5C80BC;
-  border-color: #30323D;
+  empty-cells: hide;
   vertical-align: middle;
   color: #30323D;
   text-align: center;
