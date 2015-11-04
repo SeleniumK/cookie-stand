@@ -79,9 +79,11 @@ var southCenter = new Store("South Center Mall", 11, 38, 1.9);
 var bellevueSquare = new Store("Bellevue Square Mall", 20, 48, 3.3);
 var alki = new Store("Alki Beach", 3, 24, 2.6);
 
-
-for(var i = 0; i < storeList.length; i++) {
-  storeList[i].calcAndDisplay();
+function displayAllStores() {
+  for(var i = 0; i < storeList.length; i++) {
+    storeList[i].calcAndDisplay();
+  }
 }
 
+displayAllStores();
 
