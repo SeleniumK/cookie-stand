@@ -24,7 +24,7 @@ function Store(nameOfStore, minCust, maxCust, avCookie) {
 
   this.initializeTable = function() {
     var table = document.createElement('table');
-    document.body.appendChild(table);
+    document.getElementById('storeData').appendChild(table);
     table.setAttribute('id', 'cookieTable');
 
     var heading = document.createElement('tr');
@@ -78,6 +78,7 @@ var seaTac = new Store("SeaTac Airport", 6, 44, 1.2);
 var southCenter = new Store("South Center Mall", 11, 38, 1.9);
 var bellevueSquare = new Store("Bellevue Square Mall", 20, 48, 3.3);
 var alki = new Store("Alki Beach", 3, 24, 2.6);
+
 
 function displayAllStores() {
   for(var i = 0; i < storeList.length; i++) {
