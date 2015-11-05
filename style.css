@@ -5,8 +5,9 @@ body{
 }
 
 #storeData {
-  height: 400px;
+  height: f00px;
   width: 900px;
+  margin: auto;
 }
 #update{
   background-color: rgba(247, 247, 247, .75);
@@ -15,13 +16,14 @@ body{
   top: 250px;
   left: 125px;
   border-style: hidden;
-  position: absolute;
+  /*position: absolute;*/
+  margin: auto;
   padding: 4%;
 }
 
 #cookieTable{
   padding: 4%;
-  position: absolute;
+  /*position: absolute;*/
   top: 300px;
   right: 125px;
   vertical-align: middle;
@@ -29,6 +31,7 @@ body{
   color: #30323D;
   text-align: center;
   font-family: Helvetica, Verdana, sans-serif;
+  margin: auto;
 }
 
 

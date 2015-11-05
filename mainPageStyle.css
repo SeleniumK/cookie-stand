@@ -1,0 +1,15 @@
+body{
+  background-color: #F7F7F7;
+  /*background-image: url('img/orangerain.jpg');*/
+}
+
+header {
+  background-color: #30323D;
+  padding-top: 0px;
+  color: #F7F7F7;
+  text-align: center;
+}
+
+#history{
+  background-color: #F7F7F7;
+}
