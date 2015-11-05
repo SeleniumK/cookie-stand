@@ -93,7 +93,7 @@ var updateStoreList = function(event) {
   if (!event.target.nameOfStore.value || !event.target.minCust.value || !event.target.maxCust.value || !event.target.avCookie.value) {
     return alert("fields cannot be empty");
   }
-  
+
   var nameOfStore = event.target.nameOfStore.value;
   var minCust = event.target.minCust.value;
   minCust = parseInt(minCust);
@@ -109,8 +109,6 @@ var updateStoreList = function(event) {
   event.target.minCust.value = null;
   event.target.maxCust.value = null;
   event.target.avCookie.value = null;
-
-  storeList.push(newStore);
 }
 
 displayAllStores();

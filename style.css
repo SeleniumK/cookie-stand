@@ -1,10 +1,24 @@
-*{
+body{
   background-color: #F7F7F7;
+  background-image: url('img/orangerain.jpg');
+  background-size: 1400px;
+}
+#update{
+  background-color: rgba(247, 247, 247, .75);
+  width: 250px;
+  height: 250px;
+  top: 250px;
+  left: 150px;
+  border-style: hidden;
+  position: absolute;
 }
 
 #cookieTable{
-  empty-cells: hide;
+  position: fixed;
+  top: 300px;
+  right: 150px;
   vertical-align: middle;
+  background-color: rgba(247, 247, 247, .75 );
   color: #30323D;
   text-align: center;
   font-family: Helvetica, Verdana, sans-serif;
