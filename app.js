@@ -2,6 +2,7 @@ var tableHasHeading = false;
 var storeList = [];
 var update = document.getElementById("update");
 
+
 function Store(nameOfStore, minCust, maxCust, avCookie) {
   this.nameOfStore = nameOfStore;
   this.minCust = minCust;
@@ -86,7 +87,7 @@ function updateStoreList(event) {
   event.preventDefault();
 
   if (!event.target.nameOfStore.value || !event.target.minCust.value || !event.target.maxCust.value || !event.target.avCookie.value) {
-    return alert("fields cannot be empty");
+    return alert("Please put something in all fields!");
   }
 
   var nameOfStore = event.target.nameOfStore.value;
@@ -105,6 +106,7 @@ function updateStoreList(event) {
   event.target.maxCust.value = null;
   event.target.avCookie.value = null;
 }
+
 
 var pikePlace = new Store("Pike Place Market", 17, 88, 5.2);
 var seaTac = new Store("SeaTac Airport", 6, 44, 1.2);
