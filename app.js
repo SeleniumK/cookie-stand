@@ -74,12 +74,6 @@ function Store(nameOfStore, minCust, maxCust, avCookie) {
 
 }
 
-var pikePlace = new Store("Pike Place Market", 17, 88, 5.2);
-var seaTac = new Store("SeaTac Airport", 6, 44, 1.2);
-var southCenter = new Store("South Center Mall", 11, 38, 1.9);
-var bellevueSquare = new Store("Bellevue Square Mall", 20, 48, 3.3);
-var alki = new Store("Alki Beach", 3, 24, 2.6);
-
 
 function displayAllStores() {
   for(var i = 0; i < storeList.length; i++) {
@@ -87,7 +81,8 @@ function displayAllStores() {
   }
 }
 
-var updateStoreList = function(event) {
+
+function updateStoreList(event) {
   event.preventDefault();
 
   if (!event.target.nameOfStore.value || !event.target.minCust.value || !event.target.maxCust.value || !event.target.avCookie.value) {
@@ -100,7 +95,7 @@ var updateStoreList = function(event) {
   var maxCust = event.target.maxCust.value;
   maxCust = parseInt(maxCust);
   var avCookie = event.target.avCookie.value;
-  avCookie = parseInt(avCookie);
+  avCookie = parseFloat(avCookie);
 
   var newStore = new Store(nameOfStore, minCust, maxCust, avCookie);
   newStore.calcAndDisplay();
@@ -111,8 +106,14 @@ var updateStoreList = function(event) {
   event.target.avCookie.value = null;
 }
 
-displayAllStores();
+var pikePlace = new Store("Pike Place Market", 17, 88, 5.2);
+var seaTac = new Store("SeaTac Airport", 6, 44, 1.2);
+var southCenter = new Store("South Center Mall", 11, 38, 1.9);
+var bellevueSquare = new Store("Bellevue Square Mall", 20, 48, 3.3);
+var alki = new Store("Alki Beach", 3, 24, 2.6);
 
+
+displayAllStores();
 update.addEventListener("submit", updateStoreList);
 
 
