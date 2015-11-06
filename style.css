@@ -5,6 +5,7 @@ body{
 }
 
 #storeData {
+  background-color: rgba(247, 247, 247, .75);
   height: f00px;
   width: 900px;
   margin: auto;
@@ -16,14 +17,12 @@ body{
   top: 250px;
   left: 125px;
   border-style: hidden;
-  /*position: absolute;*/
   margin: auto;
   padding: 4%;
 }
 
 #cookieTable{
   padding: 4%;
-  /*position: absolute;*/
   top: 300px;
   right: 125px;
   vertical-align: middle;

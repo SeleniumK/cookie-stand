@@ -1,15 +1,83 @@
 body{
   background-color: #F7F7F7;
+  text-align: center;
   /*background-image: url('img/orangerain.jpg');*/
 }
 
+h1, h2, h3, h4 {
+  font-family: 'Droid Serif', serif;
+  color: #F7F7F7;
+}
+
 header {
+  position: relative;
+  height: 300px;
   background-color: #30323D;
   padding-top: 0px;
   color: #F7F7F7;
   text-align: center;
 }
 
+#logo {
+  display: inline;
+}
+header img{
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  top: 25px;
+}
+
+header h3 {
+  display: inline;
+  position: absolute;
+  font-style: oblique;
+  font-weight: lighter;
+  top: 80px;
+}
+
+#left{
+  left: 75px;
+}
+
+#right{
+  right: 75px;
+}
+
+header ul {
+  position: absolute;
+  list-style: none;
+  left: -35px;
+  bottom: 5px;
+}
+
+header li{
+  font-weight: lighter;
+  font-size: 18px;
+  display: inline;
+  margin: 4em;
+  text-align: center;
+
+}
+
+article {
+  background-color: #5C80BC;
+}
+
+aside {
+  background-color: #C27146;
+}
+
+#happyfamily {
+  size: 300px;
+}
+
 #history{
-  background-color: #F7F7F7;
+
+  background-color: #C27146;
+  /*background-color: #F7F7F7;*/
+}
+
+#moreSalmon{
+  display: inline;
 }
