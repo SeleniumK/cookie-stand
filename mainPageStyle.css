@@ -1,3 +1,40 @@
+
+@import "compass/CSS3";
+
+.fish {
+  position: absolute;
+  left: 50%;
+  margin-left: -100px;
+  margin-top: 10px;
+  -webkit-animation: swim 10s infinite;
+}
+
+
+@-webkit-keyframes swim {
+  0% {
+    left: 100px;
+    top: 50px;
+  }
+  25% {
+    left: 1100px;
+    top: 100px;
+  }
+  50% {
+    left: 800px;
+    -webkit-transform: rotate(-20deg) rotateY(180deg);
+    top: 200px;
+  }
+  75% {
+    left: 200;
+    top: 125px;
+  }
+  100%{
+    left: 150px;
+    top: 50px;
+  }
+}
+
+
 body{
   background-color: #30323D;
   text-align: center;
@@ -19,7 +56,7 @@ p {
 
 header {
   position: relative;
-  height: 250px;
+  height: 255px;
   padding-top: 0px;
   color: #F7F7F7;
   text-align: center;
@@ -28,7 +65,7 @@ header {
 
 header img{
   position: relative;
-  top: 25px;
+  left: -10px;
 }
 
 #storelist {
@@ -38,7 +75,8 @@ header img{
   font-weight: lighter;
   font-size: 18px;
   text-align: center;
-  margin: auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 header li{
@@ -46,20 +84,26 @@ header li{
 
 }
 
-.wrapper {
-  background-color: #F7F7F7;
-}
-
 
 article {
   background-color: #5C80BC;
+  border-radius: 25px;
 }
 
-aside {
-  background-color: #C27146;
+.articletext{
+  background-color: #B8CBED;
 }
-
 
 #history{
   background-color: #C27146;
+  border-radius: 25px
 }
+
+#historytext{
+  position: relative;
+  background-color: #FFCAAD;
+  border-radius: 25px
+  margin: 25px;
+}
+
+
