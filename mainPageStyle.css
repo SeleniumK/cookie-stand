@@ -44,6 +44,11 @@ header h3 {
   right: 75px;
 }
 
+.wrapper {
+  display: flex;
+  flex-flow: row wrap;
+}
+
 header ul {
   position: absolute;
   list-style: none;
