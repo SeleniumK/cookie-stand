@@ -3,25 +3,34 @@ body{
   background-image: url('img/orangerain.jpg');
   background-size: 1400px;
 }
+
+#storeData {
+  background-color: rgba(247, 247, 247, .75);
+  height: f00px;
+  width: 900px;
+  margin: auto;
+}
 #update{
   background-color: rgba(247, 247, 247, .75);
-  width: 250px;
-  height: 250px;
+  width: 200px;
+  height: 200px;
   top: 250px;
-  left: 150px;
+  left: 125px;
   border-style: hidden;
-  position: absolute;
+  margin: auto;
+  padding: 4%;
 }
 
 #cookieTable{
-  position: fixed;
+  padding: 4%;
   top: 300px;
-  right: 150px;
+  right: 125px;
   vertical-align: middle;
   background-color: rgba(247, 247, 247, .75 );
   color: #30323D;
   text-align: center;
   font-family: Helvetica, Verdana, sans-serif;
+  margin: auto;
 }
 
 

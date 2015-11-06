@@ -1,0 +1,62 @@
+body{
+  background-color: #30323D;
+  text-align: center;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Droid Serif', serif;
+  color: #F7F7F7;
+}
+
+p {
+  font-family: Georgia, Times, serif;
+  color: #30323D;
+}
+
+header {
+  position: relative;
+  height: 250px;
+  padding-top: 0px;
+  color: #F7F7F7;
+  text-align: center;
+}
+
+header img{
+  position: relative;
+  top: 25px;
+  margin: auto;
+}
+
+header ul {
+  position: absolute;
+  list-style: none;
+  bottom: 0px;
+  font-weight: lighter;
+  font-size: 18px;
+  text-align: center;
+  margin: auto;
+}
+
+header li{
+  display: inline;
+  margin: 4em;
+
+}
+
+.wrapper {
+  background-color: #F7F7F7;
+}
+
+article {
+  background-color: #5C80BC;
+}
+
+aside {
+  background-color: #C27146;
+}
+
+
+#history{
+
+  background-color: #C27146;
+}

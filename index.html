@@ -1,27 +1,77 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title></title>
-  <link rel="stylesheet" href="style.css">
   <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="mainPageLayout.css">
+  <link rel="stylesheet" href="mainPageStyle.css">
 </head>
 <body>
-<section id = 'storeData'>
-	<form id="update">
-	<fieldset>
-		<legend>Update Store List:</legend>
-			<label for="nameOfStore">Store Name</label><br />
-			<input type="text" name="nameOfStore" /><br />
-			<label for="minCust">Min Customers</label><br />
-			<input type="text" name="minCust" /><br />
-			<label for="maxCust">Max Customers</label><br />
-			<input type="text" name="maxCust" /><br />
-			<label for="avCookie">Average Purchase</label><br />
-			<input type="text" name="avCookie" /><br />
-			<input type="submit" name="submit" />
-	</fieldset>
-	</form>
-</section>
-<script src="app.js" type="text/javascript"></script>
+
+<header>
+  <section id="logo">
+    <img src="img/newlogo.png" alt="Seattle Salmon Cookies Logo">
+  </section>
+  <nav id="storelist">
+    <ul>
+      <li>
+        Pike Place
+      </li>
+      <li>
+        SouthCenter
+      </li>
+      <li>
+        SeaTac Airport
+      </li>
+      <li>
+        Bellevue Square
+      </li>
+      <li>
+        Alki Beach
+      </li>
+    </ul>
+  </nav>
+</header>
+
+<div class="wrapper">
+  <section id="intropic">
+    <img src="" alt="">
+  </section>
+  <section id="about">
+    <h6>Visit us at any of our locations: Open daily from 10am-6pm</h6>
+    <article class="item" id="history">
+      <h3>Our History</h3>
+      <p> Yoggoth vulgtlagln Cthulhu f'Yoggoth athg ilyaa ah uaaah Azathoth, n'gha h'hai nog ya lw'nafh nafl'bthnk y-Nyarlathotep nog, h'gof'nn ph'Hastur Tsathogguaog Chaugnar Faugnor gotha uaaah sll'ha. 'fhalma tharanak ilyaa ch' nog f'hupadgh naflthrod phlegeth li'hee, s'uhn gnaiih Chaugnar Faugn zhro bug uln ep. Nilgh'ri ch' Cthulhu ngmg k'yarnak zhro y'hah mnahn', li'hee hupadgh ngluiog h'ftaghu fhtagn phlegeth, Nyarlathotep shtunggli ebunma h'fm'latgh ngah hupadgh. NnnYoggoth li'hee ch' nw s'uhn cah ya ebunma r'luh, vulgtm ilyaa ehye athg shugg ngHastur r'luh naChaugnar Faugn, ep Hastur hai shtunggli lloigog ngsll'ha llll. Nw s'uhn y-ee kn'a ftaghu nan'gha shtunggli lloig, uln Dagon uh'eoth Nyarlathotep Cthulhu naflChaugnar Faugn, Chaugnar Faugn athg lloig sgn'wahl Hastur nw.
+
+      Azathothog lw'nafh llll orr'e nnnshtunggli Dagon Azathoth nnnuh'e, kn'a Azathoth h'Dagon shugg shogg vulgtlagln kn'a Yoggoth, ron shugg cgof'nn sll'ha nashtunggli fm'latgh. Naflshtunggli fm'latgh nilgh'ri kn'a naflstell'bsna vulgtlagln hrii chtenffyar cfhtagn, uaaah lw'nafh ngluiagl ebunma lw'nafh hafh'drn nnnzhro chtenff, naCthulhu sgn'wahl naflooboshu 'fhalma gnaiih Shub-Niggurath ee. </p>
+    </article>
+
+    <article class="item" id="cookies">
+      <h3>Meet the Cookies!</h3>
+        <img src="img/lotsafish.jpg" alt="Salmon Cookies shown striped with blue and orange frosting" />
+      <p> Ph'nglui mglw'nafh Cthulhu R'lyeh wgah'nagl fhtagn., Y-tharanak athg nilgh'ri shugg shogg, naflwgah'n y-hlirgh fhtagn gokaog. Shogg sgn'wahl hai lw'nafh h'gof'nn Hastur ep, ya naTsathoggua cnilgh'ri ep ebunma, nilgh'ri ehye s'uhn wgah'n shtunggli. 'fhalma stell'bsna c'bthnk Shub-Niggurath nali'hee Cthulhuog chlirgh gof'nn goka naebunma vulgtm, uaaah hafh'drn uaaah grah'n goka hafh'drn ebunmayar shaggoth shugg, n'ghft ehye nog Chaugnar Faugn phlegeth mg 'bthnk Nyarlathotep uaaah. </p>
+
+    </article>
+  </section>
+
+  <section id="moreSalmon">
+    <article id="salmonEvents">
+    <h3>Salmon Fever? Check out these local events!</h3>
+    <ul>
+      <li>Something</li>
+      <li>Something</li>
+      <li>Something</li>
+    </ul>
+    <img id="happyfamily" src="img/happyfamily.jpg" alt="Family enjoying our fresh made Salmon cookies">
+    </article>
+    <aside class="merch">
+        <img src="img/shirtMerch.jpg" alt="Picture of Seattle Salmon Cookies Shirt" />
+        <h3>Check Our Merch!</h3>
+    </aside>
+  </section>
+</div>
+
 </body>
 </html>
