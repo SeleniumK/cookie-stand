@@ -13,22 +13,26 @@ p {
   color: #30323D;
 }
 
+.container {
+  margin: auto;
+}
+
 header {
   position: relative;
   height: 250px;
   padding-top: 0px;
   color: #F7F7F7;
   text-align: center;
+  margin: auto;
 }
 
 header img{
   position: relative;
   top: 25px;
-  margin: auto;
 }
 
-header ul {
-  position: absolute;
+#storelist {
+  position: relative;
   list-style: none;
   bottom: 0px;
   font-weight: lighter;
@@ -39,13 +43,13 @@ header ul {
 
 header li{
   display: inline;
-  margin: 4em;
 
 }
 
 .wrapper {
   background-color: #F7F7F7;
 }
+
 
 article {
   background-color: #5C80BC;
@@ -57,6 +61,5 @@ aside {
 
 
 #history{
-
   background-color: #C27146;
 }
