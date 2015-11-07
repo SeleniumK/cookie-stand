@@ -6,20 +6,70 @@
   <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700' rel='stylesheet' type='text/css'>
 </head>
 <body>
-<div class="container"?
+<div class="container">
 <header></header>
 <section id = 'storeData'>
-	<form id="update">
+
+	<form id="pick">
 	<fieldset>
-		<legend>Update Store List:</legend>
-			<label for="nameOfStore">Store Name</label><br />
-			<input type="text" name="nameOfStore" /><br />
-			<label for="minCust">Min Customers</label><br />
-			<input type="text" name="minCust" /><br />
-			<label for="maxCust">Max Customers</label><br />
-			<input type="text" name="maxCust" /><br />
-			<label for="avCookie">Average Purchase</label><br />
-			<input type="text" name="avCookie" /><br />
+		<legend>What do you want to do?</legend>
+		<label for="new">Create New Store</label>
+		<input id = "chooseNew" type="radio" name="choose" value="new"/>
+		<label for="update">Update Store</label>
+		<input id = "chooseUpdate" type="radio" name="choose" value="update"/>
+
+	</fieldset>
+	</form>
+	<form id="newStore" class="hidden">
+	<fieldset>
+		<legend>Add Store:</legend>
+			<div class="field">
+				<label for="nameOfStore">Store Name</label>
+				<input type="text" name="nameOfStore" />
+			</div>
+
+			<div class="field">
+				<label for="minCust">Min Customers</label>
+				<input type="text" name="minCust" />
+			</div>
+
+			<div class="field">
+				<label for="maxCust">Max Customers</label>
+				<input type="text" name="maxCust" />
+			</div>
+
+			<div class="field">
+				<label for="avCookie">Average Purchase</label>
+				<input type="text" name="avCookie" />
+			</div>
+
+			<input type="submit" name="submit" />
+	</fieldset>
+	</form>
+
+	<form id="updateStore" class="hidden">
+	<fieldset>
+		<legend>Update Existing Store</legend>
+			<div class="field">
+				<label for="nameOfStore">Store Name</label>
+				<input type="text" name="nameOfStore" />
+			</div>
+
+			<div class="field">
+				<label for="minCust">Min Customers</label>
+				<input type="text" name="minCust" />
+			</div>
+
+			<div class="field">
+				<label for="maxCust">Max Customers</label>
+				<input type="text" name="maxCust" />
+			</div>
+
+			<div class="field">
+				<label for="avCookie">Average Purchase</label>
+				<input type="text" name="avCookie" />
+			</div>
+
 			<input type="submit" name="submit" />
 	</fieldset>
 	</form>
