@@ -28,6 +28,16 @@ form {
 }
 fieldset {
   border:none;
+  text-align: center;
+}
+
+input, label {
+  text-align: center;
+  margin: auto;
+}
+
+input[type=radio], input.radio {
+  margin: 2px 0 0 2px;
 }
 
 .hidden{

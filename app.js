@@ -1,9 +1,9 @@
 var tableHasHeading = false;
 var storeList = [];
-var newStore = document.getElementById("newStore");
-var updateStore = document.getElementById("updateStore");
 var chooseNew = document.getElementById("chooseNew");
 var chooseUpdate = document.getElementById("chooseUpdate");
+var newStore = document.getElementById("newStore");
+var updatestore = document.getElementById("updatestore");
 
 function Store(nameOfStore, minCust, maxCust, avCookie) {
   this.nameOfStore = nameOfStore;
@@ -77,20 +77,28 @@ function Store(nameOfStore, minCust, maxCust, avCookie) {
 
 }
 
-
 function displayAllStores() {
   for(var i = 0; i < storeList.length; i++) {
     storeList[i].calcAndDisplay();
   }
 }
 
-
-function createNewStore (event) {
+function errorCheckEvent(){
   event.preventDefault();
-
   if (!event.target.nameOfStore.value || !event.target.minCust.value || !event.target.maxCust.value || !event.target.avCookie.value) {
     return alert("Please put something in all fields!");
   }
+}
+
+function clearValues(){
+  event.target.nameOfStore.value = null;
+  event.target.minCust.value = null;
+  event.target.maxCust.value = null;
+  event.target.avCookie.value = null;
+}
+
+function createNewStore (event) {
+  errorCheckEvent();
 
   var nameOfStore = event.target.nameOfStore.value;
   var minCust = event.target.minCust.value;
@@ -102,12 +110,32 @@ function createNewStore (event) {
 
   var newStore = new Store(nameOfStore, minCust, maxCust, avCookie);
   newStore.calcAndDisplay();
-  // sessionStorage.setItem(newStore);
+  clearValues();
+}
 
-  event.target.nameOfStore.value = null;
-  event.target.minCust.value = null;
-  event.target.maxCust.value = null;
-  event.target.avCookie.value = null;
+function changeStore(event){
+  errorCheckEvent();
+
+  var nameOfStore = event.target.nameOfStore.value;
+  var minCust = event.target.minCust.value;
+  minCust = parseInt(minCust);
+  var maxCust = event.target.maxCust.value;
+  maxCust = parseInt(maxCust);
+  var avCookie = event.target.avCookie.value;
+  avCookie = parseFloat(avCookie);
+
+  for(var i = 0; i < storeList.length; i++){
+    if(nameOfStore == storeList[i].nameOfStore){
+      event.preventDefault();
+      document.getElementById("cookieTable").deleteRow(i + 1);
+      storeList.splice(i,1);
+
+      var newStore = new Store(nameOfStore, minCust, maxCust, avCookie);
+      newStore.calcAndDisplay();
+      clearValues();
+      break;
+    }
+  }
 }
 
 var pikePlace = new Store("Pike Place Market", 17, 88, 5.2);
@@ -129,6 +157,7 @@ chooseUpdate.addEventListener("click", function(){
 });
 
 newStore.addEventListener("submit", createNewStore);
+updateStore.addEventListener("submit", changeStore);
 
 
 
