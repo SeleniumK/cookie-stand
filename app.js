@@ -1,7 +1,9 @@
 var tableHasHeading = false;
 var storeList = [];
-var update = document.getElementById("update");
-
+var newStore = document.getElementById("newStore");
+var updateStore = document.getElementById("updateStore");
+var chooseNew = document.getElementById("chooseNew");
+var chooseUpdate = document.getElementById("chooseUpdate");
 
 function Store(nameOfStore, minCust, maxCust, avCookie) {
   this.nameOfStore = nameOfStore;
@@ -83,7 +85,7 @@ function displayAllStores() {
 }
 
 
-function updateStoreList(event) {
+function createNewStore (event) {
   event.preventDefault();
 
   if (!event.target.nameOfStore.value || !event.target.minCust.value || !event.target.maxCust.value || !event.target.avCookie.value) {
@@ -100,6 +102,7 @@ function updateStoreList(event) {
 
   var newStore = new Store(nameOfStore, minCust, maxCust, avCookie);
   newStore.calcAndDisplay();
+  // sessionStorage.setItem(newStore);
 
   event.target.nameOfStore.value = null;
   event.target.minCust.value = null;
@@ -107,16 +110,25 @@ function updateStoreList(event) {
   event.target.avCookie.value = null;
 }
 
-
 var pikePlace = new Store("Pike Place Market", 17, 88, 5.2);
 var seaTac = new Store("SeaTac Airport", 6, 44, 1.2);
 var southCenter = new Store("South Center Mall", 11, 38, 1.9);
 var bellevueSquare = new Store("Bellevue Square Mall", 20, 48, 3.3);
 var alki = new Store("Alki Beach", 3, 24, 2.6);
 
-
 displayAllStores();
-update.addEventListener("submit", updateStoreList);
+
+chooseNew.addEventListener("click", function(){
+  newStore.removeAttribute("class", "hidden");
+  updateStore.setAttribute("class", "hidden");
+});
+
+chooseUpdate.addEventListener("click", function(){
+  updateStore.removeAttribute("class", "hidden");
+  newStore.setAttribute("class", "hidden");
+});
+
+newStore.addEventListener("submit", createNewStore);
 
 
 

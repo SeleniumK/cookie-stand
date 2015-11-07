@@ -1,4 +1,76 @@
 
+
+body{
+  background-color: #30323D;
+  text-align: center;
+}
+
+h1, h2, h3, h6 {
+  font-family: 'Droid Serif', serif;
+  color: #F7F7F7;
+}
+
+p {
+  font-family: Georgia, Times, serif;
+  color: #30323D;
+}
+
+ul{
+  list-style: none;
+}
+
+a{
+  color: #D2619E;
+}
+
+.container {
+  margin: auto;
+}
+
+header {
+  position: relative;
+  padding-top: 0px;
+  color: #F7F7F7;
+  text-align: center;
+  margin: auto;
+}
+
+#storelist {
+  position: relative;
+  font-weight: lighter;
+  font-size: 18px;
+  text-align: center;
+  margin: auto;
+}
+
+header li{
+  display: inline;
+
+}
+
+
+article {
+  background-color: #5C80BC;
+  border-radius: 25px;
+}
+
+.articletext{
+  background-color: #B8CBED;
+}
+
+#history{
+  background-color: #C27146;
+  border-radius: 25px
+}
+
+#historytext{
+  position: relative;
+  background-color: #FFCAAD;
+  border-radius: 25px
+}
+
+
+/* FISH ANIMATION */
 @import "compass/CSS3";
 
 .fish {
@@ -32,78 +104,6 @@
     left: 150px;
     top: 50px;
   }
-}
-
-
-body{
-  background-color: #30323D;
-  text-align: center;
-}
-
-h1, h2, h3, h4 {
-  font-family: 'Droid Serif', serif;
-  color: #F7F7F7;
-}
-
-p {
-  font-family: Georgia, Times, serif;
-  color: #30323D;
-}
-
-.container {
-  margin: auto;
-}
-
-header {
-  position: relative;
-  height: 255px;
-  padding-top: 0px;
-  color: #F7F7F7;
-  text-align: center;
-  margin: auto;
-}
-
-header img{
-  position: relative;
-  left: -10px;
-}
-
-#storelist {
-  position: relative;
-  list-style: none;
-  bottom: 0px;
-  font-weight: lighter;
-  font-size: 18px;
-  text-align: center;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-header li{
-  display: inline;
-
-}
-
-
-article {
-  background-color: #5C80BC;
-  border-radius: 25px;
-}
-
-.articletext{
-  background-color: #B8CBED;
-}
-
-#history{
-  background-color: #C27146;
-  border-radius: 25px
-}
-
-#historytext{
-  position: relative;
-  background-color: #FFCAAD;
-  border-radius: 25px
-  margin: 25px;
 }
 
 
