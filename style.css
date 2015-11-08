@@ -8,15 +8,33 @@ body{
   margin:0;
   padding:20px;
   min-height: 100%;
-  background-color: #F7F7F7;
+  background-color: #30323D;
   background-image: url('img/orangerain.jpg');
   background-size: cover;
   background-repeat: no-repeat;
 }
 
+.container{
+  background-color: #30323D;
+}
+
+header {
+  padding: 15px;
+  position: relative;
+  margin: 15px auto 15px;
+  text-align: center;
+  border-bottom: 1px solid #f7f7f7;
+}
+
 #storeData {
+  padding: 30px auto 30px;
   width: 80%;
-  margin: auto;
+  margin: 30px auto 30px;
+}
+
+legend{
+  font-style: oblique;
+  font-size: 18px;
 }
 
 form {
@@ -25,7 +43,9 @@ form {
   border-style: hidden;
   margin: auto;
   padding: 4%;
+  border-radius: 25px;
 }
+
 fieldset {
   border:none;
   text-align: center;
@@ -34,6 +54,7 @@ fieldset {
 input, label {
   text-align: center;
   margin: auto;
+  text-size: 16;
 }
 
 input[type=radio], input.radio {
@@ -63,6 +84,11 @@ input[type=radio], input.radio {
   border:solid 1px #ccc;
   box-sizing:border-box;
 }
+
+#pick{
+  margin: auto;
+  padding: 5px;
+}
 #cookieTable{
   vertical-align: middle;
   background-color: rgba(247, 247, 247, .75);
@@ -70,6 +96,7 @@ input[type=radio], input.radio {
   text-align: center;
   margin: 20px auto;
   border-collapse: collapse;
+  border-radius: 25px;
 }
 
 #cookieTable tr:first-child th, #cookieTable tr:first-child td{
@@ -94,3 +121,7 @@ input[type=radio], input.radio {
   padding-bottom: 20px;
 }
 
+footer {
+  text-align: center;
+  margin: auto;
+}

@@ -27,12 +27,17 @@ a{
   margin: auto;
 }
 
+
 header {
   position: relative;
   padding-top: 0px;
   color: #F7F7F7;
   text-align: center;
   margin: auto;
+}
+
+.hidden {
+  display: none;
 }
 
 #storelist {
