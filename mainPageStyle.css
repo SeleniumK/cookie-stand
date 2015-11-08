@@ -19,8 +19,12 @@ ul{
   list-style: none;
 }
 
-a{
-  color: #D2619E;
+a:link{
+  color: #F7F7F7;
+}
+
+a:visited{
+  color: #30323D;
 }
 
 .container {
@@ -55,29 +59,36 @@ header li{
 
 
 article {
+  padding:0px;
   background-color: #5C80BC;
 }
 
 .articletext{
+  padding: 15px;
+  margin: 0px, auto, 0px;
   background-color: #B8CBED;
 }
 
 #history{
   background-color: #C27146;
-  border-radius: 25px
 }
 
 #historytext{
   position: relative;
   background-color: #FFCAAD;
+  padding: 35x;
 }
 
+footer{
+  margin: 30px, auto, 10px;
+  padding: 50px;
+}
 
-#saleslink {
+#salesLink {
   padding: 30px;
   margin: auto;
   font-size: 30px;
-  color: #C27146;
+  color: #F7F7F7;
 }
 
 /* FISH ANIMATION */
@@ -115,5 +126,3 @@ article {
     top: 50px;
   }
 }
-
-
