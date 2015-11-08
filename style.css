@@ -43,7 +43,6 @@ form {
   border-style: hidden;
   margin: auto;
   padding: 4%;
-  border-radius: 25px;
 }
 
 fieldset {
@@ -96,7 +95,6 @@ input[type=radio], input.radio {
   text-align: center;
   margin: 20px auto;
   border-collapse: collapse;
-  border-radius: 25px;
 }
 
 #cookieTable tr:first-child th, #cookieTable tr:first-child td{
