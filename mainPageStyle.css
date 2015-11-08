@@ -56,7 +56,6 @@ header li{
 
 article {
   background-color: #5C80BC;
-  border-radius: 25px;
 }
 
 .articletext{
@@ -71,9 +70,15 @@ article {
 #historytext{
   position: relative;
   background-color: #FFCAAD;
-  border-radius: 25px
 }
 
+
+#saleslink {
+  padding: 30px;
+  margin: auto;
+  font-size: 30px;
+  color: #C27146;
+}
 
 /* FISH ANIMATION */
 @import "compass/CSS3";
