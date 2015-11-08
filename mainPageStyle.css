@@ -64,7 +64,7 @@ article {
 }
 
 .articletext{
-  padding: 15px;
+  padding: 25px;
   margin: 0px, auto;
   background-color: #B8CBED;
 }
@@ -76,7 +76,7 @@ article {
 #historytext{
   position: relative;
   background-color: #FFCAAD;
-  padding: 35x;
+  padding: 25px;
 }
 #about h3{
   font-size: 24px;
